@@ -20,28 +20,28 @@ function Services() {
         </div>
 
                   {/* Blog */}
-                  <div className='mt-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
+                  <div className='viewtime mt-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
       <div className="flex flex-col gap-10">
 <BlogCard/>
 </div>
     </div>
 
                     {/* Empresarial */}
-      <div className='my-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
+      <div className='viewtime my-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
       <div className="flex flex-col gap-10">
 <SimpleCard/>
 </div>
     </div>
 
                     {/* Portfolio */}
-      <div className='mt-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
+      <div className='viewtime mt-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
       <div className="flex flex-col gap-10">
 <ReverseCard/>
 </div>
     </div>
 
                 {/* Ecommerce */}
-      <div className='mt-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
+      <div className='viewtime mt-10 w-auto backdrop-blur-sm bg-opacity-[0.03] bg-gray-300 drop-shadow-lg rounded-2xl'>
       <div className="flex flex-col gap-10">
 <EcommerceCard/>
 </div>
