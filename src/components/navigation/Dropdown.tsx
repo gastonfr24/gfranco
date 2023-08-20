@@ -67,10 +67,10 @@ function Dropdown({navigation}: NavigationProps) {
           leaveTo="opacity-0 scale-95 translate-x-full"
         >
           <Menu.Items className="
-          absolute bg-graydark
+          absolute bg-orange-300
            h-screen
-          -right-[52px] w-56 mt-2
-           divide-gray-100 
+          -right-[64px] w-56 mt-[6px]
+           divide-gray-100
            shadow-lg ring-1 ring-black 
            ring-opacity-5 focus:outline-none">
             <div className="px-1 py-1 ">
