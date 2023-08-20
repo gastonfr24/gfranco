@@ -94,6 +94,7 @@ function Navbar() {
       bg-transparent lg:py-8 transition-all duration-500 z-[10] text-white"
     >
       <div className="
+      relative
       flex
       w-11/12 mx-auto
        justify-between items-center">
