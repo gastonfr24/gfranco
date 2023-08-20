@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: 'Potenciando tu éxito digital con soluciones excepcionales en desarrollo web y más. Convierte tu visión en una realidad en línea impactante.',
   keywords: "web design, blog, ecommerce, portfolio, marketing",
   authors: [{ name: 'Gaston' }, { name: 'Gaston', url: 'https://gfranco.com' }],
-  //colorScheme: 'dark',
+  colorScheme: 'dark',
   //creator: 'Jiachi Liu',
   //publisher: 'Sebastian Markbåge',
   // formatDetection: {
