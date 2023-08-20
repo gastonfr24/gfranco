@@ -9,8 +9,8 @@ function AboutCard({service}) {
   };
 
   return (
-<div key={service.id} class={`${style.conic} w-full mx-auto lg:w-full py-4 my-6 lg:my-0`} style={conicBeforeStyle} >
-<div class='pt-2'>
+<div key={service.id} className={`${style.conic} w-full mx-auto lg:w-full py-4 my-6 lg:my-0`} style={conicBeforeStyle} >
+<div className='pt-2'>
 <Image src={service.image} alt={`imagen de ${service.title}`} className='w-[93%] mx-auto'/>
 <div className='w-10/12 mx-auto mt-3'>
   <h1 className='text-base lg:text-xl text-gray-200 font-bold'>
