@@ -4,7 +4,7 @@ import me from "public/assets/images/me.jpg"
 function Header() {
 
   const buttonPiola: {} = {
-    "--clr": `#8adfe0, --i: ${0} `,
+    "--clr": "#8adfe0", "--i": 0,
   };
 
   return (
@@ -22,7 +22,7 @@ function Header() {
             </p>
       <div className="flex gap-4 mt-10">
       <a
-        href=""
+        href="/services"
         className="a-neon mx-auto lg:mx-4"
         style={buttonPiola}
       >
