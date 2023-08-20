@@ -1,0 +1,92 @@
+"use client"
+
+import { Menu, Transition } from '@headlessui/react'
+import { Fragment, useEffect, useRef, useState } from 'react'
+import { AiOutlineArrowDown } from 'react-icons/ai'
+import style from "./page.module.css"
+import Link from 'next/link'
+
+
+interface NavItem {
+    name: string;
+    href: string;
+  }
+  
+  interface Navigation {
+    name: string;
+    description: string;
+    href: string;
+    navitems?: NavItem[];
+    current?: boolean;
+    // icon?: React.ElementType; // Si deseas incluir la información del tipo de icono
+  }
+
+  interface NavigationProps {
+    navigation: Navigation[];
+  }
+
+function Dropdown({navigation}: NavigationProps) {
+    const [isOpened, setIsOpened] = useState(false);
+
+    const toggleMenu = () => {
+      setIsOpened((prevIsOpened) => !prevIsOpened);
+    };
+
+  return (
+<div className="">
+      <Menu as="div" className="relative inline-block text-left">
+        <div>
+          <Menu.Button           
+      className={`${style.menu} ${isOpened ? style.opened : ''} w-12 h-auto`}
+      onClick={toggleMenu}
+      aria-label="Main Menu"
+    >
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path
+          className={`${style.line} ${style.line1}`}
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+        />
+        <path className={`${style.line} ${style.line2}`} d="M 20,50 H 80" />
+        <path
+          className={`${style.line} ${style.line3}`}
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+        />
+      </svg>
+
+
+          </Menu.Button>
+        </div>
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
+          <Menu.Items className="absolute right-0 bg-graydark -mt-6 w-36 origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div className="px-1 py-1 ">
+            {navigation.map((item) => (
+              <Menu.Item key={item.name}>
+                {({ active }) => (
+              <Link href={item.href}
+                    className={`${
+                      active ? 'bg-blue-300 text-white' : 'text-gray-200'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    {item.name}
+        </Link>
+                )}
+              </Menu.Item>
+            ))}
+            </div>
+
+          </Menu.Items>
+        </Transition>
+      </Menu>
+    </div>
+  )
+}
+
+export default Dropdown

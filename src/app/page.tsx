@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <main className="
-    px-28
+    lg:px-28 px-10
     background-gray text-gray-200 
     background">
       <div style={{zIndex:'10'}}>

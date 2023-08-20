@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import style from './page.module.css'
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import Dropdown from "./Dropdown";
 
 
 interface NavItem {
@@ -86,16 +87,21 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="fixed w-full
-      px-16
-      bg-transparent py-8 transition-all duration-500 z-[10] text-white"
+      className="
+      fixed w-full
+      lg:px-16
+      px-10
+      bg-transparent lg:py-8 transition-all duration-500 z-[10] text-white"
     >
-      <div className="w-11/12 mx-auto flex justify-between items-center">
-        <a href='/' className="hidden md:block">
+      <div className="
+      flex
+      w-11/12 mx-auto
+       justify-between items-center">
+        <a href='/' className="">
         <Image src={logo} alt="logo gastonfr" className="w-auto h-[45px]" />
         </a>
         {/* Rutas */}
-        <ul className="flex">
+        <ul className="hidden lg:flex">
         {navigation.map((item) => (
           <li key={item.name} className="uppercase font-semibold text-xs mx-[32px]">
               <Link href={item.href}
@@ -105,6 +111,10 @@ function Navbar() {
           </li>
           ))}
         </ul>
+        <div className="lg:hidden">
+        <Dropdown navigation={navigation}/>
+        </div>
+
       </div>
       <ScrollFunction/>
     </nav>
