@@ -170,6 +170,6 @@ background-color: rgb(23 23 23/var(--tw-bg-opacity));
   animation-timeline: --card;
   animation-name: show;
 
-  animation-range: entry 25% cover 50%;
+  animation-range: entry 20% cover 40%;
   animation-fill-mode: both;
 }
