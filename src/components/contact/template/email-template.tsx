@@ -498,7 +498,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                               <div>
                                                 If you don't want to receive
                                                 these emails from us in the
-                                                future, please{" "}
+                                                future, please
                                                 <a
                                                   href="https://app.omegaconstructionmanagement.com/profile"
                                                   target="_blank"

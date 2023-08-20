@@ -1,4 +1,5 @@
-import React from 'react'
+import Image from "next/image"
+import me from "public/assets/images/me.jpg"
 
 function Header() {
   return (
@@ -39,8 +40,8 @@ function Header() {
     <div className="hidden lg:flex sm:mt-0 pt-12 sm:px-0">
       <img
         className="w-[380px] h-[380px] object-cover scale-x-[-1] rounded-full ml-auto"
-        src="./assets/images/me.jpg"
-        alt=""
+        src={me}
+        alt="creador de páginas web profesionales o.O"
       />
     </div>
   </div>
