@@ -63,6 +63,7 @@ message,
       </label>
       <input
       value={name}
+      required
       onChange={e=>onChange(e)}
         type="name"
         name="name"
@@ -79,6 +80,7 @@ message,
         type="email"
         name="email"
         value={email}
+        required
         onChange={e=>onChange(e)}
         id="email"
         placeholder="Email"
@@ -94,6 +96,7 @@ message,
       rows={6}
         name="message"
         value={message}
+        required
         onChange={e=>onChange(e)}
         id="content"
         placeholder="Contenido del email"
