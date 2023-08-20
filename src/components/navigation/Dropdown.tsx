@@ -67,7 +67,7 @@ function Dropdown({navigation}: NavigationProps) {
           leaveTo="opacity-0 scale-95 translate-x-full"
         >
           <Menu.Items className="
-          absolute bg-orange-300
+          absolute bg-graydark
            h-screen
           -right-[64px] w-56 mt-[6px]
            divide-gray-100
