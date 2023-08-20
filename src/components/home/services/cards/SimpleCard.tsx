@@ -1,6 +1,6 @@
 import Image from "next/image"
 import viper from "public/assets/images/demo/viperpup.png"
-
+import Link from "next/link"
 
 
 function SimpleCard() {
@@ -20,9 +20,9 @@ function SimpleCard() {
      Atrae a tu audiencia con un diseño cautivador y conviértelos en clientes fieles.<br/><br/> Con nuestra solución, obtendrás un eficaz embudo de ventas, 
       brindando a los visitantes una visión completa de tus servicios y la oportunidad de suscribirse para recibir las últimas novedades.
       </p>
-      <button className="mt-4 bg-skyblue-200 px-5 py-2 text-graydark font-extrabold shadow-xl transition-all duration-300 hover:bg-[#38B6FF]">
+      <Link href="/contact"  className="mt-4 bg-skyblue-200 px-5 py-2 text-graydark font-extrabold shadow-xl transition-all duration-300 hover:bg-[#38B6FF]">
         Saber más
-      </button>
+      </Link>
       <span className="text-sm font-bold text-gray-300">
        $200k - $850k
       </span>

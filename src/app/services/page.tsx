@@ -4,7 +4,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='bg-graydark px-24'>
+    <div className='bg-graydark px-10 lg:px-24'>
       <Header/>
       <Services/>
     </div>

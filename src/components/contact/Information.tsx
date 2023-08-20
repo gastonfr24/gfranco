@@ -2,7 +2,7 @@ import React from 'react'
 
 function Information() {
   return (
-    <div className="md:p-6 mr-2
+    <div className="md:p-6 mr-2 
     backdrop-blur-sm bg-opacity-[0.03] shadow-xl
     bg-gray-100 sm:rounded-lg">
         <div className="p-12">

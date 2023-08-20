@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import blog from "public/assets/images/demo/blog_up.png"
 
 function BlogCard() {
@@ -17,9 +18,9 @@ function BlogCard() {
 
          
       </p>
-      <button className="mt-4 bg-lime-300 px-5 py-2 text-graydark font-bold shadow-xl transition-all duration-300 hover:bg-[#38B6FF]">
+      <Link href="/contact" className="mt-4 bg-lime-300 px-5 py-2 text-graydark font-bold shadow-xl transition-all duration-300 hover:bg-[#38B6FF]">
         Saber más
-      </button>
+      </Link>
       <span className="text-sm font-bold text-gray-300">
        $80k - $400k
       </span>

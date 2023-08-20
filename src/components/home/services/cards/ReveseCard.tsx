@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import portfolio from "public/assets/images/demo/portfolio_up.png"
 
 function ReverseCard() {
@@ -12,9 +13,9 @@ function ReverseCard() {
        Transforma tus proyectos en una vitrina digital impresionante que cautiva a tus visitantes y resalta tu talento de manera única.
        Obtén tu Portafolio Web ahora mismo y abre la puerta a nuevas oportunidades para mostrar tu expertise al mundo.
       </p>
-      <button className="mt-4 bg-rose-400 px-5 py-2 text-graydark font-bold shadow-xl transition-all duration-300 hover:bg-[#38B6FF]">
+      <Link href="/contact"  className="mt-4 bg-rose-400 px-5 py-2 text-graydark font-bold shadow-xl transition-all duration-300 hover:bg-[#38B6FF]">
         Saber más
-      </button>
+      </Link>
       <span className="text-sm font-bold text-gray-300">
        $100k - $400k
       </span>

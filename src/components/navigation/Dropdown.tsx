@@ -57,6 +57,7 @@ function Dropdown({navigation}: NavigationProps) {
           </Menu.Button>
         </div>
         <Transition
+          show={isOpened}
           as={Fragment}
           enter="transition ease-out duration-100"
           enterFrom="transform opacity-0 scale-95"
@@ -71,6 +72,7 @@ function Dropdown({navigation}: NavigationProps) {
               <Menu.Item key={item.name}>
                 {({ active }) => (
               <Link href={item.href}
+                    onClick={() => setIsOpened(false)}
                     className={`${
                       active ? 'bg-blue-300 text-white' : 'text-gray-200'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
