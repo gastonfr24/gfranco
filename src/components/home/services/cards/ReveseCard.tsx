@@ -3,7 +3,7 @@ import portfolio from "public/assets/images/demo/portfolio_up.png"
 
 function ReverseCard() {
   return (
-    <div className="relative flex lg:h-[420px] w-full gap-2 overflow-hidden rounded-lg shadow-lgitems-center">
+    <div className="relative flex lg:h-[420px] w-full gap-2 overflow-hidden rounded-lg shadow-lg">
 
     <div className="m-4 lg:m-0 flex flex-col items-start justify-center gap-4 p-4 lg:ml-10 lg:w-[95%]">
       <h2 className="text-2xl font-semibold text-rose-400">Portfolio Personal</h2>

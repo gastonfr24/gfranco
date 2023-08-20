@@ -2,7 +2,6 @@
 import Header from "@/components/home/header/Header";
 import Services from "@/components/home/services/Services";
 import Who from "@/components/home/who/Who";
-import SroollSmoth from "@/components/tools/SrollSmooth";
 
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
       <Who/>
       <Services/>
       </div>
-      <SroollSmoth/>
     </main>
   )
 }

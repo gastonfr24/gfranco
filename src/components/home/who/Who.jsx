@@ -48,7 +48,7 @@ function Who() {
         {
           services.map(service =>(
 
-            <AboutCard service={service}/>
+            <AboutCard service={service} key={service.id}/>
 
           ))
         }

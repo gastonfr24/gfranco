@@ -5,7 +5,7 @@ import viper from "public/assets/images/demo/viperpup.png"
 
 function SimpleCard() {
   return (
-    <div className="relative flex lg:h-[420px] w-full gap-2 overflow-hidden rounded-lg shadow-lgitems-center">
+    <div className="relative flex lg:h-[420px] w-full gap-2 overflow-hidden rounded-lg shadow-lg ">
     <div className="hidden lg:block h-[140%] w-full">
     <Image
     alt="mock up de viperpy - pagina web empresarial"

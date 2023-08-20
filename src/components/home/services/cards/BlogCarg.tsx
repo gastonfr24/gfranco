@@ -3,7 +3,7 @@ import blog from "public/assets/images/demo/blog_up.png"
 
 function BlogCard() {
   return (
-    <div className="relative flex lg:h-[420px] w-full gap-2 overflow-hidden rounded-lg shadow-lgitems-center">
+    <div className="relative flex lg:h-[420px] w-full gap-2 overflow-hidden rounded-lg shadow-lg">
 
     <div className="flex flex-col items-start justify-center gap-4 p-4 m-4 lg:m-0 lg:ml-10 lg:w-[95%]">
       <h2 className="lg:text-2xl font-semibold text-lime-300">Blog Profesional

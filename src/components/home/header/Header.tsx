@@ -4,7 +4,7 @@ function Header() {
   return (
 <div className="h-screen py-28 lg:mx-6 text-center lg:text-left">
   <div className="mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-20">
-    <div className=" mt-20">
+    <div className="mt-20">
       <h1 className="text-[40px] lg:text-[45px] xl:text-[40px] font-bold leading-tight mt-5 sm:mt-0 ">
         Gaston Franco
       </h1>

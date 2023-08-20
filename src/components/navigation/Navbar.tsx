@@ -77,7 +77,7 @@ function Navbar() {
     {
       name: 'contacto',
       description: '¿Tienes preguntas o estás interesado en trabajar juntos?',
-      href: '/contacto',
+      href: '/contact',
        current: currentRoute==='/contact' ? true:false,
       // icon: MdEmail,
     },
@@ -91,14 +91,14 @@ function Navbar() {
       bg-transparent py-8 transition-all duration-500 z-[10] text-white"
     >
       <div className="w-11/12 mx-auto flex justify-between items-center">
-        <a href='/' className="">
+        <a href='/' className="hidden md:block">
         <Image src={logo} alt="logo gastonfr" className="w-auto h-[45px]" />
         </a>
         {/* Rutas */}
         <ul className="flex">
         {navigation.map((item) => (
-          <li className="uppercase font-semibold text-xs mx-[32px]">
-              <Link key={item.name} href={item.href}
+          <li key={item.name} className="uppercase font-semibold text-xs mx-[32px]">
+              <Link href={item.href}
                       className={`${style.underline} group flex items-center ${item.current?'text-skyblue-100':''}`}>
                 {item.name}
         </Link>

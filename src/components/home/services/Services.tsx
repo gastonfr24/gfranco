@@ -7,7 +7,7 @@ import BlogCard from './cards/BlogCarg'
 
 function Services() {
   return (
-    <div className='py-24 lg:py-20'>
+    <div className='lg:py-20'>
 
 <div className="">
           <h2 className="text-center lg:text-left text-2xl lg:text-4xl text-gray-100 font-semibold">
