@@ -2,6 +2,11 @@ import Image from "next/image"
 import me from "public/assets/images/me.jpg"
 
 function Header() {
+
+  const buttonPiola: {} = {
+    "--clr": `#8adfe0, --i: ${0} `,
+  };
+
   return (
 <div className="h-screen py-28 lg:mx-6 text-center lg:text-left">
   <div className="mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-20">
@@ -19,7 +24,7 @@ function Header() {
       <a
         href=""
         className="a-neon mx-auto lg:mx-4"
-        style={{ "--clr": "#8adfe0", "--i": 0 }}
+        style={buttonPiola}
       >
         <span className="inline-flex text-base text-graydark font-bold text-center justify-center">
           Empezar
@@ -38,7 +43,7 @@ function Header() {
       </div>
     </div>
     <div className="hidden lg:flex sm:mt-0 pt-12 sm:px-0">
-      <img
+      <Image
         className="w-[380px] h-[380px] object-cover scale-x-[-1] rounded-full ml-auto"
         src={me}
         alt="creador de páginas web profesionales o.O"
