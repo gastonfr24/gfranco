@@ -492,27 +492,8 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                               }}
                                             >
                                               <div>
-                                                Copyright © 2022. All rights
+                                                Copyright © 2023. All rights
                                                 reserved.
-                                              </div>
-                                              <div>
-                                                If you don't want to receive
-                                                these emails from us in the
-                                                future, please
-                                                <a
-                                                  href="https://app.omegaconstructionmanagement.com/profile"
-                                                  target="_blank"
-                                                  style={{
-                                                    textDecoration: "none",
-                                                    color: "#828282"
-                                                  }}
-                                                >
-                                                  <span
-                                                    style={{ color: "#828282" }}
-                                                  >
-                                                    unsubscribe
-                                                  </span>
-                                                </a>
                                               </div>
                                             </div>
                                           </td>
