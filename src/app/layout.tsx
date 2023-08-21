@@ -5,6 +5,9 @@ import Navbar from '@/components/navigation/Navbar'
 import Footer from '@/components/navigation/Footer'
 import dynamic from 'next/dynamic'
 const SrollSmooth = dynamic(() => import('@/components/tools/SrollSmooth'), { ssr: false })
+import { Suspense } from 'react'
+import ProgressBar from './components/ProgressBar'
+import Loading from './Loading'
 
 const font = Nunito({ subsets: ['latin'] })
 
@@ -32,7 +35,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
       <Navbar/>
-        {children}
+      <Suspense fallback={<Loading />}>
+      {children}
+      </Suspense>
       <SrollSmooth/>
       <Footer/>
       </body>

@@ -3,6 +3,28 @@
 @tailwind utilities;
 
 
+/*--------------------      Scrollbar     --------------------*/
+
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+/* Estilo del thumb (el "pulgar" del scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #202020; /* Gradiente de naranja a azul */
+}
+
+/* Estilo del thumb cuando se pasa el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background: #242424 /* Gradiente más oscuro de naranja a azul en hover */
+}
+
+/* Estilo de la pista del scrollbar (el fondo en el que se desplaza el thumb) */
+::-webkit-scrollbar-track {
+  background-color: #121212; /* Color del fondo de la pista */
+}
+
+
 /* ===================== backgournd image ================= */
 
 .background-gray {
