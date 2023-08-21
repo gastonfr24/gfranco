@@ -117,7 +117,7 @@ message,
 </span>
 </button>
     }
-<Toaster position="bottom-left" />
+<Toaster position="bottom-left"  className="z-[3]"/>
   </form>
   )
 }

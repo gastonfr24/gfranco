@@ -4,13 +4,11 @@ import style from './page.module.css'
 
 interface EmailTemplateProps {
   firstName: string;
-  message: string;
   email: string;
 }
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const EmailTemplateClient: React.FC<Readonly<EmailTemplateProps>> = ({
   firstName,
-  message,
   email
 }) => (
 <>
@@ -117,7 +115,8 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                                         lineHeight: "120%"
                                                       }}
                                                     >
-                                                      Gastón, alguien quiere una cotización para su página
+                                                      ¡Gracias por tu interés en nuestros servicios! 
+                                                      Te proporcionaremos una cotización personalizada que se adapte a tus necesidades específicas
                                                     </div>
                                                   </td>
                                                 </tr>
@@ -205,7 +204,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                               
                                               Página Web
                                             </h1>
-                                            <h2
+{/*                                             <h2
                                               style={{
                                                 textAlign: "center",
                                                 fontWeight: "normal",
@@ -219,8 +218,8 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                             >
                                               
                                               cotización por página: 
-                                            </h2>
-                                            <div
+                                            </h2> */}
+{/*                                             <div
                                               style={{
                                                 textAlign: "center",
                                                 fontFamily:
@@ -232,7 +231,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                               }}
                                             >
                                               de parte de: {firstName}
-                                            </div>
+                                            </div> */}
                                           </td>
                                         </tr>
                                       </tbody>
@@ -307,7 +306,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                                         textAlign: "left"
                                                       }}
                                                     >
-                                                      Hola, soy {firstName}
+                                                      Hola {firstName}!
                                                     </h3>
                                                     <div
                                                       style={{
@@ -321,7 +320,16 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                                         lineHeight: "135%"
                                                       }}
                                                     >
-                                                     {message}
+                                                      <br/>
+                                                     Es un placer saber que estás interesado en obtener una cotización para tu página web. 
+                                                     Aprecio tu confianza en mis servicios para llevar tu presencia en línea al siguiente nivel.
+                                                      Me gustaría informarte que he recibido tu solicitud y
+                                                      estaré encantado de proporcionarte una cotización personalizada 
+                                                      que se adapte a tus necesidades específicas.<br/><br/>
+                                                      Te prometo que revisaré cuidadosamente la información que me proporciones para ofrecerte una estimación precisa y justa.
+                                                      <br/><br/>
+                                                      Mientras tanto, te invito a que visites mi página web, donde podrás encontrar información sobre
+                                                       los precios o rangos de precios que ofrezco.
                                                     </div>
                                                   </td>
                                                 </tr>
@@ -409,10 +417,10 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
                                                         fontSize: 20,
                                                         lineHeight: "135%"
                                                       }}
-                                                      href="{{link}}"
+                                                      href="gastonfr.com"
                                                       target="_blank"
                                                     >
-                                                      {email}
+                                                      gastonfr.com
                                                     </a>
                                                   </td>
                                                 </tr>

@@ -1,4 +1,5 @@
-import React from 'react'
+import CopyEmail from "./CopyEmail"
+
 
 function Information() {
   return (
@@ -35,7 +36,7 @@ function Information() {
           />
         </svg>
         <div className="ml-4 text-gray-900 dark:text-gray-100 text-md tracking-wide font-semibold w-40">
-          gastonfr24@gmail.com
+          <CopyEmail/>
         </div>
       </div>
       </div>
