@@ -34,10 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Loading/>
       <Navbar/>
-      <Suspense fallback={<ProgressBar />}>
       {children}
-      </Suspense>
       <SrollSmooth/>
       <Footer/>
       </body>
