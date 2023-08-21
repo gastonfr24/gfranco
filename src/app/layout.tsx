@@ -5,6 +5,7 @@ import Navbar from '@/components/navigation/Navbar'
 import Footer from '@/components/navigation/Footer'
 import dynamic from 'next/dynamic'
 import ProgressBar from './components/ProgressBar'
+import {Providers} from './themes/Providers'
 const SrollSmooth = dynamic(() => import('@/components/tools/SrollSmooth'), { ssr: false })
 
 const font = Nunito({ subsets: ['latin'] })
@@ -24,15 +25,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={font.className}>
+      <Providers>
       <Navbar/>
-      {children}
-      <SrollSmooth/>
-      <ProgressBar/>
+          {children}
       <Footer/>
+      <ProgressBar/>
+      </Providers>
+      <SrollSmooth/>
       </body>
-
     </html>
   )
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import NProgress from "nprogress";
+import { useTheme } from 'next-themes'
 
 type PushStateInput = [
   data: any,
@@ -9,8 +10,10 @@ type PushStateInput = [
 ];
 
 export default function ProgressBar() {
-  const height = "2px";
-  const color = "#A2E4FD";
+  const { theme } = useTheme()
+  const color = theme === "light" ? "#171717" : "#A2E4FD"
+  const height = theme === "4px" ? "" : "2px"
+
 
   const styles = (
     <style>

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /*--------------------      Scrollbar     --------------------*/
 
 ::-webkit-scrollbar {
@@ -24,6 +23,19 @@
   background-color: #121212; /* Color del fondo de la pista */
 }
 
+.light ::-webkit-scrollbar-thumb {
+  background: #A2E4FD; /* Gradiente de naranja a azul */
+}
+
+/* Estilo del thumb cuando se pasa el mouse sobre él */
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #69cbee /* Gradiente más oscuro de naranja a azul en hover */
+}
+
+/* Estilo de la pista del scrollbar (el fondo en el que se desplaza el thumb) */
+.light ::-webkit-scrollbar-track {
+  background-color: white; /* Color del fondo de la pista */
+}
 
 /* ===================== backgournd image ================= */
 
@@ -32,9 +44,19 @@
   z-index: -3;
 }
 
+.light .background-gray {
+  background-color: white;
+  z-index: -3;
+}
+
 .background {
   position: relative;
-  z-index: 1; /* Aseguramos que el elemento principal esté en una capa superior */
+  z-index: 1;
+}
+
+.light .background {
+  position: relative;
+  z-index: 1;
 }
 
 .background::before,
@@ -43,60 +65,111 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0; /* Opacidad inicial, ambas imágenes están ocultas */
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -2; /* Colocar las imágenes de fondo detrás del contenido */
+  z-index: -2;
 }
-  
-  .background::before {
-    background-image: url('/assets/images/portfolio_fade.png'); /* Primera imagen de fondo */
-    animation: fade1 10s infinite alternate, fadeDelay1 0s infinite alternate; /* Animaciones para alternar y retrasar */
+
+.background::before {
+  background-image: url('/assets/images/portfolio_fade.png');
+  animation: fade1 10s infinite alternate, fadeDelay1 0s infinite alternate;
+}
+
+.background::after {
+  background-image: url('/assets/images/portfolio.png');
+  animation: fade2 10s infinite alternate, fadeDelay2 10s infinite alternate;
+}
+
+/* Cambiar los keyframes en el tema "light" para el pseudo-elemento ::before */
+.light .background::before {
+  animation: fade1-light 10s infinite alternate, fadeDelay1-light 0s infinite alternate;
+  opacity: 0.3;
+}
+
+/* Cambiar los keyframes en el tema "light" para el pseudo-elemento ::after */
+.light .background::after {
+  animation: fade2-light 10s infinite alternate, fadeDelay2-light 10s infinite alternate;
+  opacity: 0.3;
+}
+
+@keyframes fade1 {
+  0%, 100% {
+    opacity: 0;
   }
-  
-  .background::after {
-    background-image: url('/assets/images/portfolio.png'); /* Segunda imagen de fondo */
-    animation: fade2 10s infinite alternate, fadeDelay2 10s infinite alternate; /* Animaciones para alternar y retrasar */
+  50% {
+    opacity: 1;
   }
-  
-  @keyframes fade1 {
-    0%, 100% {
-      opacity: 0; /* Opacidad mínima, la imagen está oculta */
-    }
-    50% {
-      opacity: 1; /* Opacidad completa, la imagen está visible */
-    }
+}
+
+@keyframes fade2 {
+  0%, 100% {
+    opacity: 0;
   }
-  
-  @keyframes fade2 {
-    0%, 100% {
-      opacity: 0; /* Opacidad mínima, la imagen está oculta */
-    }
-    50% {
-      opacity: 1; /* Opacidad completa, la imagen está visible */
-    }
+  50% {
+    opacity: 1;
   }
-  
-  @keyframes fadeDelay1 {
-    0%, 50% {
-      opacity: 0; /* Opacidad mínima, la imagen está oculta */
-    }
-    100% {
-      opacity: 1; /* Opacidad completa, la imagen está visible */
-    }
+}
+
+@keyframes fadeDelay1 {
+  0%, 50% {
+    opacity: 0;
   }
-  
-  @keyframes fadeDelay2 {
-    0%, 50% {
-      opacity: 0; /* Opacidad mínima, la imagen está oculta */
-    }
-    100% {
-      opacity: 1; /* Opacidad completa, la imagen está visible */
-    }
+  100% {
+    opacity: 1;
   }
+}
+
+@keyframes fadeDelay2 {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframes modificados para el tema "light" para el pseudo-elemento ::before */
+@keyframes fade1-light {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.05;
+  }
+}
+
+@keyframes fadeDelay1-light {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
+/* Keyframes modificados para el tema "light" para el pseudo-elemento ::after */
+@keyframes fade2-light {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.05;
+  }
+}
+
+@keyframes fadeDelay2-light {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
 
   /* ===================== neon bottom ================= */
 
@@ -164,10 +237,15 @@
 
 
 /* ===================================== Footer ===================================== */
-.u-bg-white{
+.dark .u-bg-white{
 --tw-bg-opacity: 1;
 background-color: #0c0c0d;
 background-color: rgb(23 23 23/var(--tw-bg-opacity));
+}
+
+.light .u-bg-white{
+--tw-bg-opacity: 1;
+background-color: white;
 }
 
 
@@ -195,5 +273,4 @@ background-color: rgb(23 23 23/var(--tw-bg-opacity));
   animation-range: entry 20% cover 40%;
   animation-fill-mode: both;
 }
-
 

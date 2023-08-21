@@ -69,7 +69,7 @@ message,
         name="name"
         id="name"
         placeholder="Full Name"
-        className="w-100 mt-2 py-3 px-3 rounded-lg bg-opacity-[0.03] backdrop-blur-sm bg-graydark border border-gray-400 text-gray-300 font-semibold focus:border-skyblue-100 focus:outline-none"
+        className="w-100 mt-2 py-3 px-3 rounded-lg dark:bg-opacity-[0.03] dark:backdrop-blur-sm bg-white dark:bg-graydark border boder-gray-600 dark:border-gray-400 text-gray-800 dark:text-gray-300 font-semibold focus:border-skyblue-100 focus:outline-none"
       />
     </div>
     <div className="flex flex-col mt-2">
@@ -84,7 +84,7 @@ message,
         onChange={e=>onChange(e)}
         id="email"
         placeholder="Email"
-        className="w-100 mt-2 py-3 px-3 rounded-lg bg-opacity-[0.03] backdrop-blur-sm bg-graydark border border-gray-400 text-gray-300 font-semibold focus:border-skyblue-100 focus:outline-none"
+        className="w-100 mt-2 py-3 px-3 rounded-lg dark:bg-opacity-[0.03] dark:backdrop-blur-sm bg-white dark:bg-graydark border boder-gray-600 dark:border-gray-400 text-gray-800 dark:text-gray-300 font-semibold focus:border-skyblue-100 focus:outline-none"
       />
     </div>
     <div className="flex flex-col mt-2">
@@ -100,7 +100,7 @@ message,
         onChange={e=>onChange(e)}
         id="content"
         placeholder="Contenido del email"
-        className="w-100 mt-2 py-3 px-3 rounded-lg bg-opacity-[0.03] backdrop-blur-sm bg-graydark border border-gray-400 text-gray-300 font-semibold focus:border-skyblue-100 focus:outline-none"
+        className="w-100 mt-2 py-3 px-3 rounded-lg dark:bg-opacity-[0.03] dark:backdrop-blur-sm bg-white dark:bg-graydark border boder-gray-600 dark:border-gray-400 text-gray-800 dark:text-gray-300 font-semibold focus:border-skyblue-100 focus:outline-none"
       />
     </div>
     {loading ?

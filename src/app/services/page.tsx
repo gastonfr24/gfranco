@@ -10,7 +10,7 @@ export const metadata = {
 
 function page() {
   return (
-    <div className='bg-graydark px-10 lg:px-24'>
+    <div className='bg-gray-100 dark:bg-graydark px-10 lg:px-24'>
       <Header/>
       <Services/>
     </div>

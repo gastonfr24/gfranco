@@ -35,12 +35,14 @@ export const ScrollFunction = () => {
     if (navbarElement) {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 30) {
         navbarElement.classList.remove('bg-transparent');
-        navbarElement.classList.add('bg-graydark');
+        navbarElement.classList.add('dark:bg-graydark');
+        navbarElement.classList.add('bg-gray-50');
         navbarElement.classList.add('shadow-lg');
       } else {
-        navbarElement.classList.remove('bg-graydark');
-        navbarElement.classList.remove('shadow-lg');
         navbarElement.classList.add('bg-transparent');
+        navbarElement.classList.remove('dark:bg-graydark');
+        navbarElement.classList.remove('bg-gray-50');
+        navbarElement.classList.remove('shadow-lg');
       }
     }
   };
@@ -91,7 +93,9 @@ function Navbar() {
       fixed w-full
       lg:px-16
       px-10
-      bg-transparent lg:py-8 transition-all duration-500 z-[10] text-white"
+      bg-transparent lg:py-8 transition-all duration-500 z-[10] 
+      text-slate-800
+      dark:text-white"
     >
       <div className="
       relative
@@ -106,7 +110,7 @@ function Navbar() {
         {navigation.map((item) => (
           <li key={item.name} className="uppercase font-semibold text-xs mx-[32px]">
               <Link href={item.href}
-                      className={`${style.underline} group flex items-center ${item.current?'text-skyblue-100':''}`}>
+                      className={`${style.underline} group flex items-center ${item.current?'text-sky-500 dark:text-skyblue-100':'text-gray-800 dark:text-white'}`}>
                 {item.name}
         </Link>
           </li>

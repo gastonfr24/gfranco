@@ -2,14 +2,17 @@
 import logo from "public/assets/images/logo.png"
 import Image from "next/image"
 
+// Theme Switch
+import Switcher from "../tools/Switcher";
+
 // Icons
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai"
 
 
 function Footer() {
   return (
-    <div className="bg-graydark pt-20">
-<footer className="relative border-t u-bg-white border-gray-600">
+    <div className="bg-white dark:bg-graydark pt-20">
+<footer className="relative border-t dark:u-bg-white border-gray-600">
   <div className="absolute inset-x-0 flex items-center justify-center -top-3">
     <div className="relative flex justify-center h-10 w-14">
       <div className="absolute w-full h-full inset-0 -top-[2px] blur-[6px] u-bg-white rounded-full"></div>
@@ -22,11 +25,11 @@ function Footer() {
   </div>
   <div className="container py-6 px-10">
     <div className="sm:relative flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
-      <div className="flex flex-col-reverse items-center gap-3 sm:flex-row sm:w-40 md:w-60">
+      <div className=" flex flex-col-reverse items-center gap-3 sm:flex-row sm:w-40 md:w-60">
 
-        {/* modo oscuro */}
+      <Switcher/>
 
-        <span className="text-sm text-gray-400">
+        <span className="text-sm text-gray-700 dark:text-gray-400">
           © 2023 gfranco - MIT License
         </span>
       </div>
@@ -79,7 +82,7 @@ function Footer() {
           data-v-d64ec27c=""
         >
           <AiFillLinkedin
-                      className="text-gray-100 transition duration-500 hover:text-blue-500 hover:scale-110"
+                      className="text-gray-700 dark:text-gray-100 transition duration-500 hover:text-blue-500 hover:scale-110"
                       width="1em"
                                  height="1em"
           />
@@ -102,7 +105,7 @@ function Footer() {
           data-v-d64ec27c=""
         >
           <AiFillGithub
-                      className="text-gray-100 transition duration-500 hover:text-violet-500 hover:scale-110"
+                      className="text-gray-700 dark:text-gray-100 transition duration-500 hover:text-violet-500 hover:scale-110"
                       width="1em"
                                  height="1em"
           />
@@ -118,13 +121,15 @@ function Footer() {
           data-v-d64ec27c=""
         >
           <AiFillInstagram
-                      className="text-gray-100 transition duration-500 hover:text-pink-400 hover:scale-110"
+                      className="text-gray-700 dark:text-gray-100 transition duration-500 hover:text-pink-400 hover:scale-110"
                       width="1em"
                                  height="1em"
           />
         </a>
         </li>
-
+        <li>
+        
+        </li>
       </ul>
     </div>
   </div>

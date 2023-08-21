@@ -11,7 +11,7 @@ const config: Config = {
       colors:{
         "skyblue-50": "#8adfe0",
         "skyblue-100":'#A2E4FD',
-        "skyblue-200":'#5CE1E6',
+        "skyblue-200":'#77d1f1',
         "skyblue-500": "#037c94",
 
         "graydark": "#171717",
@@ -19,5 +19,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: "class",
 }
 export default config
