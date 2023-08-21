@@ -4,10 +4,8 @@ import { Nunito } from 'next/font/google'
 import Navbar from '@/components/navigation/Navbar'
 import Footer from '@/components/navigation/Footer'
 import dynamic from 'next/dynamic'
-const SrollSmooth = dynamic(() => import('@/components/tools/SrollSmooth'), { ssr: false })
-import { Suspense } from 'react'
 import ProgressBar from './components/ProgressBar'
-import Loading from './Loading'
+const SrollSmooth = dynamic(() => import('@/components/tools/SrollSmooth'), { ssr: false })
 
 const font = Nunito({ subsets: ['latin'] })
 
@@ -17,14 +15,8 @@ export const metadata: Metadata = {
   keywords: "web design, blog, ecommerce, portfolio, marketing",
   authors: [{ name: 'Gaston' }, { name: 'Gaston', url: 'https://gfranco.com' }],
   colorScheme: 'dark',
-  //creator: 'Jiachi Liu',
-  //publisher: 'Sebastian Markbåge',
-  // formatDetection: {
-  //   email: false,
-  //   address: false,
-  //   telephone: false,
-  // },
 }
+
 
 export default function RootLayout({
   children,
@@ -34,10 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Loading/>
       <Navbar/>
       {children}
       <SrollSmooth/>
+      <ProgressBar/>
       <Footer/>
       </body>
 
