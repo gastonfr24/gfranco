@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
       <Navbar/>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<ProgressBar />}>
       {children}
       </Suspense>
       <SrollSmooth/>
