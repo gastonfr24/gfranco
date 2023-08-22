@@ -30,7 +30,7 @@ function Footer() {
       <Switcher/>
 
         <span className="text-sm text-gray-700 dark:text-gray-400">
-          © 2023 gfranco - MIT License
+          © 2023 gastonfr - MIT License
         </span>
       </div>
       <ul className="flex flex-wrap justify-center text-sm gap-x-6 gap-y-2">

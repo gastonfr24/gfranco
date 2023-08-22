@@ -1,7 +1,6 @@
 "use client"
-import React, { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Toaster, toast } from 'sonner'
+import { toast } from 'sonner'
 import { BiCopy } from "react-icons/bi"
 
 function CopyEmail() {
