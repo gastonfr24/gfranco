@@ -6,6 +6,7 @@ import Footer from '@/components/navigation/Footer'
 import dynamic from 'next/dynamic'
 import ProgressBar from './components/ProgressBar'
 import {Providers} from './themes/Providers'
+import AnimationLayout from './components/AnimationLayout'
 const SrollSmooth = dynamic(() => import('@/components/tools/SrollSmooth'), { ssr: false })
 
 const font = Nunito({ subsets: ['latin'] })
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body className={font.className}>
       <Providers>
       <Navbar/>
+      <AnimationLayout>
           {children}
+      </AnimationLayout>
       <Footer/>
       <ProgressBar/>
       </Providers>
