@@ -3,6 +3,7 @@ import SimpleCard from './cards/SimpleCard'
 import ReverseCard from './cards/ReveseCard'
 import EcommerceCard from './cards/EcommerceCard'
 import BlogCard from './cards/BlogCarg'
+import AllServices from './AllServices'
 
 
 function Services() {
@@ -46,7 +47,6 @@ function Services() {
 <EcommerceCard/>
 </div>
     </div>
-
     </div>
   )
 }

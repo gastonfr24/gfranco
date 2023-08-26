@@ -14,8 +14,8 @@ function Header() {
       <h1 className="text-[40px] lg:text-[45px] xl:text-[40px] font-bold leading-tight mt-5 sm:mt-0 ">
         Gaston Franco
       </h1>
-        <h2 className='text-skyblue-100 font-bold text-2xl'>
-        Web Developer Ssr
+        <h2 className='text-skyblue-100 font-bold text-xl'>
+        Desarrollo Web y Marketing Digital
         </h2>
       <p className="mt-5 text-[15px] ">
       Soy desarrollador web profesional, mi objetivo es que puedas tener un sitio web moderno y atractivo en un corto plazo y a un costo accesible.

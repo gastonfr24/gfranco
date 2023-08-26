@@ -18,8 +18,7 @@ function EcommerceCard() {
       <h2 className="text-2xl font-semibold text-violet-400">E-commerce</h2>
       <p className="text-sm lg:text-base text-gray-900 dark:text-gray-100">
       Llega a más personas con un Ecommerce llamativo y fácil de usar. Diseñado para capturar la atención
-       y ofreciendo una experien
-       cia intuitiva que guía a tus clientes hacia la compra.<br/><br/>
+       y ofreciendo una experiencia intuitiva que guía a tus clientes hacia la compra.<br/><br/>
        Además, brinda a tus clientes opciones seguras y variadas para el pago 
        como MercadoPago, tarjeta de crédito y hasta criptomonedas como Ethereum (ETH)
       </p>

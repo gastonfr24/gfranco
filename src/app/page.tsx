@@ -1,4 +1,5 @@
 import Header from "@/components/home/header/Header";
+import AllServices from "@/components/home/services/AllServices";
 import Services from "@/components/home/services/Services";
 import Who from "@/components/home/who/Who";
 
@@ -15,7 +16,8 @@ export default function Home() {
       <div style={{zIndex:'10'}}>
       <Header/>
       <Who/>
-      <Services/>
+      {/* <Services/> */}
+      <AllServices/>
       </div>
     </main>
   )
