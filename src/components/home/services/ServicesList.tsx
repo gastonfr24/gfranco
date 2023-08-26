@@ -33,7 +33,7 @@ function AllServices() {
                         key={item.id}
                         layoutId={item.id}
                         onClick={() => setSelectedId(item.id)}
-                        className='cursor-pointer p-6 m-4 rounded-lg bg-[#222222]
+                        className='cursor-pointer p-6 m-4 rounded-lg bg-[#f4f5f5] dark:bg-[#222222]
                         border border-transparent hover:border-[#454545]
                         '
                         style={{
@@ -41,7 +41,7 @@ function AllServices() {
                         }}
                         >
                         
-                        <motion.p className="text-2xl text-skyblue-100">{item.title}</motion.p>
+                        <motion.p className="text-2xl text-skyblue-200 dark:text-skyblue-100">{item.title}</motion.p>
                         <motion.p className="text-gray-500 mt-4">{item.subtitle}</motion.p>
                     </motion.div>
                 ))}
@@ -58,7 +58,9 @@ function AllServices() {
                         <motion.div
                             layoutId={selectedId}
                             onClick={() => setSelectedId("")}
-                            className="lg:w-8/12 h-auto dark:bg-[#222222] rounded-lg border-[#454545] selected-content"
+                            className="lg:w-8/12 h-auto bg-[#f4f5f5] dark:bg-[#222222] rounded-lg border-[#454545] selected-content
+                            shadow-lg
+                            "
                         >
                             <motion.div
                             className="flex flex-col gap-10"

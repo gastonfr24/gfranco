@@ -11,10 +11,10 @@ function ServiceCard({item}:any) {
       <p className='lg:text-2xl font-semibold text-skyblue-200 dark:text-skyblue-100'>
     {item.title}
       </p>
-      <p className='text-sm lg:text-base mt-5 text-gray-300'>
+      <p className='text-sm lg:text-base mt-5 text-gray-800 dark:text-gray-300'>
       {item.subtitle}
       </p>
-      <p className='mt-3 text-gray-300'>
+      <p className='mt-3 text-gray-800 dark:text-gray-300'>
       {item.content}
       </p>
       </div>
