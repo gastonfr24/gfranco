@@ -7,13 +7,13 @@ import styles from "./page.module.css"
 
 
 function AllServices() {
-    const [selectedId, setSelectedId] = useState(null)
+    const [selectedId, setSelectedId] = useState("")
     const selectedItem = items.find((item) => item.id === selectedId);
 
     // Manejar clics fuera del contenido seleccionado para cerrarlo
     const handleOutsideClick = (event:any) => {
         if (selectedId && !event.target.closest(".selected-content")) {
-            setSelectedId(null)
+            setSelectedId("")
         }
     }
 
@@ -57,7 +57,7 @@ function AllServices() {
                     >
                         <motion.div
                             layoutId={selectedId}
-                            onClick={() => setSelectedId(null)}
+                            onClick={() => setSelectedId("")}
                             className="lg:w-8/12 h-auto dark:bg-[#222222] rounded-lg border-[#454545] selected-content"
                         >
                             <motion.div
